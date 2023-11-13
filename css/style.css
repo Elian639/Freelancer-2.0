@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Orbitron:wght@500&family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Orbitron:wght@500&family=Inconsolata:wght@300&display=swap');
 
 /* Reset */
 * {
@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* Estilos generales del body */
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #000000;
@@ -20,9 +21,9 @@ body {
   color: #ffffff;
 }
 
-/* Header */
+/* Estilos del encabezado */
 header {
-  background-color: #000000; /* Ajuste del color de fondo a negro */
+  background-color: #000000; 
   margin-top: 0;
   padding: 0;
   position: sticky;
@@ -33,6 +34,7 @@ header {
   position: relative;
 }
 
+/* Estilos del encabezado - Título */
 header h1 {
   color: #39ff14;
   font-size: 55px;
@@ -41,7 +43,7 @@ header h1 {
   text-align: center;
 }
 
-/* Additions for the rotating number */
+/*  número giratorio en el encabezado */
 #rotating-number {
   position: absolute;
   top: 50%;
@@ -61,6 +63,7 @@ header h1 {
   }
 }
 
+/* Estilos de navegación */
 nav {
   display: flex;
   justify-content: space-between;
@@ -76,13 +79,15 @@ nav ul {
 nav li {
   margin-right: 20px;
 }
+
+/* Estilos de navegación en pantallas pequeñas */
 @media only screen and (max-width: 767px) {
   header h1 {
-    font-size: 36px; /* Ajusta el tamaño del título para dispositivos móviles */
+    font-size: 36px; 
   }
 
   #rotating-number {
-    font-size: 16px; /* Ajusta el tamaño del número giratorio para dispositivos móviles */
+    font-size: 16px; 
   }
 
   nav {
@@ -100,41 +105,43 @@ nav li {
   }
 
   nav a {
-    font-size: 18px; /* Ajusta el tamaño de los enlaces del menú para dispositivos móviles */
-    margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+    font-size: 18px; 
+    margin-right: 0; 
   }
 
   main {
-    grid-template-columns: 1fr; /* Cambia a una columna en dispositivos móviles */
-    padding: 10px; /* Ajusta el padding en dispositivos móviles */
+    grid-template-columns: 1fr; 
+    padding: 10px; 
   }
 
   main h2,
   main p {
-    font-size: 20px; /* Ajusta el tamaño del texto en dispositivos móviles */
-    padding: 15px; /* Ajusta el padding en dispositivos móviles */
+    font-size: 20px; 
+    padding: 15px; 
   }
 
   main div.image-container img {
-    width: 100%; /* Ajusta el ancho de las imágenes en dispositivos móviles */
+    width: 100%; 
   }
 }
 
+/* Estilos de enlaces de navegación */
 nav a {
   text-decoration: none;
-  border: 2px solid #00ff62;
-  color: #00ff62;
+  border: 2px solid #005eff; 
+  background-color: #005eff; 
+  color: #00ff62; 
   font-size: 20px;
   font-weight: bold;
-  transition: background-color 0.3s;
 }
 
+/* Estilos de enlaces de navegación al pasar el mousse */
 nav a:hover {
-  background-color: #39ff14;
-  color: #000000;
+  background-color: #005eff; 
+  color: #00ff62;
 }
 
-/* Sections */
+/* Estilos de secciones */
 section {
   display: flex;
   justify-content: center;
@@ -143,11 +150,12 @@ section {
   margin: 50px 0;
   padding: 20px;
   border: 5px solid #00ff62;
-  background-color: #000000; /* Ajuste del color de fondo a negro */
+  background-color: #000000; 
   font-family: 'Inconsolata', monospace;
   color: #00ff62;
 }
 
+/* Estilos de títulos de secciones */
 section h2 {
   color: #00ff62;
   font-size: 45px;
@@ -157,14 +165,16 @@ section h2 {
   margin-bottom: 20px;
 }
 
+/* Estilos de párrafos de secciones */
 section p {
   color: #00ff62;
   font-size: 20px;
   text-align: justify;
   margin-bottom: 20px;
-  background-color: #000000; /* Ajuste del color de fondo a negro */
+  background-color: #000000; 
 }
 
+/* Estilos de imágenes de secciones */
 section img {
   width: 100%;
   max-width: 800px;
@@ -174,7 +184,7 @@ section img {
   margin-bottom: 20px;
 }
 
-/* Footer */
+/* Estilos del pie de página */
 footer {
   background-color: #000000;
   color: #00ff62;
@@ -185,6 +195,7 @@ footer {
   padding: 20px;
 }
 
+/* Estilos de títulos del pie de página */
 footer h2 {
   font-size: 20px;
   color: #00ff62;
@@ -192,6 +203,7 @@ footer h2 {
   margin-bottom: 20px;
 }
 
+/* Estilos de imágenes del pie de página */
 footer img {
   width: 60px;
   height: 60px;
@@ -208,6 +220,7 @@ main {
   padding: 20px;
 }
 
+/* Estilos de títulos y párrafos en la página de servicios */
 main h2,
 main p {
   border: 5px solid #00ff62;
@@ -216,12 +229,14 @@ main p {
   background-color: #000000; /* Ajuste del color de fondo a negro */
 }
 
+/* Estilos del contenedor de imágenes en la página de servicios */
 main div.image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Estilos de imágenes en la página de servicios */
 main div.image-container img {
   width: 80%;
   border: 5px solid #00ff62;
