@@ -7,10 +7,11 @@
   box-sizing: border-box;
 }
 
+/* Estilos para el body */
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #000000;
-  background-image: linear-gradient(to bottom, #00ff62, #00ff62, #000000);
+  background-image: url("../img/fondo_cyberpunk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,78 +21,55 @@ body {
   color: #ffffff;
 }
 
-/* Header */
+/* Estilos para el header */
 header {
-  background-color: #000000; /* Ajuste del color de fondo a negro */
+  background-color: #000000;
+  background-image: url("../img/header_cyberpunk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 0;
   padding: 0;
   position: sticky;
   top: 0;
   height: 245px;
   width: 100%;
-  border: 3px solid #39ff14;
-  position: relative;
-}
 
-header h1 {
-  color: #39ff14;
-  font-size: 55px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
-
-/* Additions for the rotating number */
-#rotating-number {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  font-size: 24px;
-  color: #00ff33;
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-50%) rotate(360deg);
+  /* Estilos para el título h1 dentro del header */
+  h1 {
+    color: #00ff62;
+    font-size: 55px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    text-align: center;
   }
 }
 
+/* Estilos para la barra de navegación */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-right: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      border: 2px solid #00ff62;
+      color: #00ff62;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  border: 2px solid #00ff62;
-  color: #00ff62;
-  font-size: 20px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: #39ff14;
-  color: #000000;
-}
-
-/* Sections */
+/* Estilos para las secciones */
 section {
   display: flex;
   justify-content: center;
@@ -100,38 +78,58 @@ section {
   margin: 50px 0;
   padding: 20px;
   border: 5px solid #00ff62;
-  background-color: #000000; /* Ajuste del color de fondo a negro */
+  background-color: #000000;
   font-family: 'Inconsolata', monospace;
   color: #00ff62;
+
+  /* Estilos para los títulos h2 dentro de las secciones */
+  h2 {
+    color: #00ff62;
+    font-size: 45px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para los párrafos dentro de las secciones */
+  p {
+    color: #00ff62;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para las imágenes dentro de las secciones */
+  img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 5px solid #00ff62;
+    color: #00ff62;
+    margin-bottom: 20px;
+  }
+
+  /* Modificaciones para dispositivos móviles */
+  @media (max-width: 767px) {
+    margin: 20px 0;
+    padding: 10px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
-section h2 {
-  color: #00ff62;
-  font-size: 45px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-section p {
-  color: #00ff62;
-  font-size: 20px;
-  text-align: justify;
-  margin-bottom: 20px;
-  background-color: #000000; /* Ajuste del color de fondo a negro */
-}
-
-section img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  border: 5px solid #00ff62;
-  color: #00ff62;
-  margin-bottom: 20px;
-}
-
-/* Footer */
+/* Estilos para el footer */
 footer {
   background-color: #000000;
   color: #00ff62;
@@ -140,47 +138,63 @@ footer {
   font-weight: 500;
   text-align: center;
   padding: 20px;
+
+  /* Estilos para los títulos h2 dentro del footer */
+  h2 {
+    font-size: 20px;
+    color: #00ff62;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para las imágenes dentro del footer */
+  img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border: 5px solid #00ff62;
+    color: #00ff62;
+  }
 }
 
-footer h2 {
-  font-size: 20px;
-  color: #00ff62;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-footer img {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-  border: 5px solid #00ff62;
-  color: #00ff62;
-}
-
-/* Modificaciones para la página de servicios */
+/* Modificaciones para la página de servicios en el main */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px;
-}
 
-main h2,
-main p {
-  border: 5px solid #00ff62;
-  padding: 20px;
-  text-align: center;
-  background-color: #000000; /* Ajuste del color de fondo a negro */
-}
+  /* Estilos para los títulos h2 y párrafos dentro del main */
+  h2, p {
+    border: 5px solid #00ff62;
+    padding: 20px;
+    text-align: center;
+  }
 
-main div.image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  /* Estilos para los contenedores de imágenes dentro del main */
+  div.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-main div.image-container img {
-  width: 80%;
-  border: 5px solid #00ff62;
-  margin: 10px 0;
+    img {
+      width: 80%;
+      border: 5px solid #00ff62;
+      margin: 10px 0;
+    }
+  }
+
+  /* Modificaciones para dispositivos móviles */
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+
+    h2, p {
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    div.image-container img {
+      width: 100%;
+    }
+  }
 }
