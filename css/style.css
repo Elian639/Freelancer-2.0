@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Orbitron:wght@500&family=Inconsolata:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Orbitron:wght@500&family=Inconsolata:wght@300&display=swap');
 
 /* Reset */
 * {
@@ -76,8 +76,6 @@ nav ul {
 nav li {
   margin-right: 20px;
 }
-
-/* Media Query para dispositivos móviles */
 @media only screen and (max-width: 767px) {
   header h1 {
     font-size: 36px; /* Ajusta el tamaño del título para dispositivos móviles */
@@ -229,4 +227,3 @@ main div.image-container img {
   border: 5px solid #00ff62;
   margin: 10px 0;
 }
-
