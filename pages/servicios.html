@@ -4,34 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+        
+        h3 {
+            font-family: 'Press Start 2P', cursive; /* Ejemplo de una fuente pixelada */
+            color: black; /* Color negro */
+            text-shadow: 0 0 5px #00ff33, 0 0 5px #00ff33, 0 0 5px #00ff33; /* Sombra verde simulando pixelado */
+            letter-spacing: 2px; /* Ajuste del espaciado entre letras */
+        }
+    </style>
     <title>Servicios</title>
 </head>
 
 <body>
     <header>
-        <h1>Freelancer Web 2.0</h1>
-        <img src="../img/logo.jpg" alt="Logo">
-        <nav>
-            <div id="rotating-number">FREELANCER 2.0</div>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./trayectoria.html">Trayectoria</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Freelancer Web 2.0</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tienda.html">Tienda</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <h2>Servicios freelancer</h2>
-        <h2>En esta sección encontrarás debajo los diferentes servicios que brindo.</h3>
+        <h3>SERVICIOS FREELANCER</h3>
+        <h2>En esta sección encontrarás debajo los diferentes servicios que brindo.</h2>
+
+        <div class="servicio">
+            <h3>Redacción</h3>
+            <h2>¡Saludos y bienvenidos a mi mundo de palabras y creatividad!</h2>
        
-            <h2>Redacción:
-                <p>
-            
-                ¡Saludos y bienvenido/a a mi mundo de palabras y creatividad!
+            <h3>
 
                 Soy Leandro Elian Ballato, un apasionado redactor de contenidos con un amor inquebrantable por la escritura persuasiva y cautivadora. Mi pluma es mi herramienta mágica, capaz de transformar ideas simples en narrativas poderosas que capturan la esencia y la esencia de cualquier tema.
                 
@@ -43,25 +70,24 @@
                 
                 Permíteme llevar tu contenido al siguiente nivel. ¡Estoy listo/a para escribir la próxima gran historia contigo!
                 
-                Cordialmente,</p>
-            </h2>
-            
-            <h2>Diseño gráfico publicitario
-            
-            <p>Aquí encontrarás algunas imágenes creadas por mí haciendo uso de diferentes herramientas</p>
-            <div class="image-container">
+                </h3>
+            </div>
+
+            <div class="servicio">
+                <h3>Diseño gráfico publicitario:</h3>
+            <h2>Aquí encontrarás algunas imágenes creadas por mí haciendo uso de diferentes herramientas</h2>
+                <div class="image-container">
+             <!-- Imágenes -->
                 <img src="../img/OIG (10).jpeg" alt="argentina">
                 <img src="../img/OIG (11).jpeg" alt="argbandera">
-                <img src="../img/OIG (9).jpeg" alt="latinoamerica">
-                <img src="../img/OIG (27).jpeg" alt="china">
-                <img src="../img/OIG (39).jpeg" alt="grecia">
-                <img src="../img/IMG-20231026-WA0062.jpg" alt="cartera">
-            </div>
                 
-        <h2>
-            Diseño Web:
-            <p>¡Hola y bienvenido/a al mundo del desarrollo web, donde las ideas se convierten en experiencias digitales sorprendentes!
-
+                
+            </div>
+        </div>
+                
+        <div class="servicio">
+            <h3>Diseño Web:
+            ¡Hola y bienvenido/a al mundo del desarrollo web, donde las ideas se convierten en experiencias digitales sorprendentes!</p>
 Soy Leandro Elian Ballato, un apasionado desarrollador web con un amor inquebrantable por la creación de experiencias digitales innovadoras y atractivas. Mi teclado es mi pincel y mi código es mi lienzo, a través del cual transformo conceptos abstractos en interfaces dinámicas y funcionales que hacen palpable la visión de cada cliente.
 
 Con una amplia experiencia en el desarrollo de sitios web atractivos y fáciles de usar, he perfeccionado el arte de combinar diseño estético con funcionalidad sólida. Mi enfoque no se limita a la escritura impecable de código, sino que se extiende a comprender las necesidades únicas de cada proyecto y a traducirlas en soluciones personalizadas que superan las expectativas.
@@ -72,28 +98,20 @@ Si estás buscando un desarrollador web creativo que convierta tus ideas en real
 
 Permíteme ser el arquitecto digital de tu próxima gran idea. ¡Juntos, podemos construir un mundo digital impresionante y funcional!
 
-Saludos</p>
-        </h2>
-        
-        <h2>Marketing Digital:
-        
-            <p>Bienvenido/a al apasionante mundo del marketing digital, donde las estrategias se convierten en historias de éxito y las ideas se transforman en resultados tangibles!
+Saludos</h3>
+</div>
+<div class="servicio">
+    <h2>Marketing Digital:
+    Bienvenidos al apasionante mundo del marketing digital, donde las estrategias se convierten en historias de éxito y las ideas se transforman en resultados tangibles!</p>
 
             Soy Leandro Elian Ballato, un estratega de marketing digital apasionado y orientado a resultados, con un profundo amor por la creación de campañas que no solo generan impacto, sino que también dejan una huella perdurable en la mente de los consumidores. Mi mente es mi herramienta de creación y mi análisis es mi brújula, a través de la cual navego por el vasto océano digital para posicionar marcas y productos en la cima del reconocimiento y la relevancia.
 
 Con una amplia experiencia en la planificación y ejecución de campañas digitales integrales, he perfeccionado el arte de fusionar la creatividad con la estrategia para producir resultados medibles y significativos. Mi enfoque no se limita simplemente a la generación de leads y el aumento de conversiones, sino que se extiende a la construcción de relaciones sólidas y duraderas con los consumidores, basadas en la confianza y la autenticidad.
 
-A lo largo de mi trayectoria, he colaborado con diversas marcas y empresas, ayudándolas a expandir su alcance y a potenciar su presencia en línea a través de campañas digitales innovadoras y efectivas. Desde la implementación de estrategias de SEO y SEM hasta la gestión de campañas de redes sociales y la optimización de contenido, he demostrado mi habilidad para navegar por el panorama digital con destreza y eficacia.
-
-Si estás buscando un estratega de marketing digital creativo y centrado en los resultados que pueda llevar tu marca al siguiente nivel, has llegado al lugar adecuado. Estoy listo/a para crear narrativas digitales poderosas que conecten con tu audiencia y posicionen tu marca en la cima del reconocimiento y la preferencia del consumidor.
-
-Permíteme ser el impulsor de tu próxima gran historia de éxito digital. ¡Juntos, podemos alcanzar nuevas alturas de relevancia y éxito en el mundo del marketing digital!
-
-Cordialmente, Leandro Elian Ballato</p>
 </h2>
-        
-            
-        </div>
+</div>
+
+
     </main>
     <footer>
         <div>
@@ -102,6 +120,11 @@ Cordialmente, Leandro Elian Ballato</p>
             <a href="https://www.twitter.com"><img src="../img/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
+
+   >
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
