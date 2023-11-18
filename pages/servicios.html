@@ -8,12 +8,53 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <style>
-        
-        h3 {
-            font-family: 'Press Start 2P', cursive; /* Ejemplo de una fuente pixelada */
-            color: black; /* Color negro */
-            text-shadow: 0 0 5px #00ff33, 0 0 5px #00ff33, 0 0 5px #00ff33; /* Sombra verde simulando pixelado */
-            letter-spacing: 2px; /* Ajuste del espaciado entre letras */
+        /* Estilos para el texto */
+        body {
+            font-family: 'Press Start 2P', cursive;
+            color: black;
+            text-shadow: 0 0 10px #00ff33, 0 0 20px #00ff33, 0 0 30px #00ff33;
+            letter-spacing: 1px;
+        }
+
+        /* Estilos para el botón */
+        .btn-neon {
+            font-family: 'Press Start 2P', cursive;
+            color: #00ff33;
+            border: 2px solid #00ff33;
+            background-color: transparent;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-neon:hover {
+            background-color: #00ff33;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Estilos para las cajas de servicio */
+        .servicio {
+            padding: 20px;
+            margin-bottom: 40px;
+            border: 2px solid #00ff33;
+            border-radius: 10px;
+        }
+
+        /* Estilos para las imágenes */
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border: 2px solid #00ff33;
+            border-radius: 5px;
         }
     </style>
     <title>Servicios</title>
@@ -51,14 +92,14 @@
         </nav>
     </header>
     <main>
-        <h3>SERVICIOS FREELANCER</h3>
-        <h2>En esta sección encontrarás debajo los diferentes servicios que brindo.</h2>
+        <h1>SERVICIOS FREELANCER</h1>
+        <h3>En esta sección encontrarás debajo los diferentes servicios que brindo.</h3>
 
         <div class="servicio">
-            <h3>Redacción</h3>
-            <h2>¡Saludos y bienvenidos a mi mundo de palabras y creatividad!</h2>
+            <h2>Redacción</h2>
+            <h3>¡Saludos y bienvenidos a mi mundo de palabras y creatividad!</h3>
        
-            <h3>
+            <h4>
 
                 Soy Leandro Elian Ballato, un apasionado redactor de contenidos con un amor inquebrantable por la escritura persuasiva y cautivadora. Mi pluma es mi herramienta mágica, capaz de transformar ideas simples en narrativas poderosas que capturan la esencia y la esencia de cualquier tema.
                 
@@ -68,9 +109,9 @@
                 
                 Si estás buscando un redactor creativo que eleve la calidad de tu contenido y amplifique la voz de tu marca, no busques más. Estoy listo/a para embarcarme en nuevos desafíos y convertir ideas en historias cautivadoras que dejarán una impresión duradera en tus audiencias.
                 
-                Permíteme llevar tu contenido al siguiente nivel. ¡Estoy listo/a para escribir la próxima gran historia contigo!
+                Permíteme llevar tu contenido al siguiente nivel. ¡Estoy listo para escribir la próxima gran historia contigo!
                 
-                </h3>
+                </h4>
             </div>
 
             <div class="servicio">
@@ -86,9 +127,10 @@
         </div>
                 
         <div class="servicio">
-            <h3>Diseño Web:
-            ¡Hola y bienvenido/a al mundo del desarrollo web, donde las ideas se convierten en experiencias digitales sorprendentes!</p>
-Soy Leandro Elian Ballato, un apasionado desarrollador web con un amor inquebrantable por la creación de experiencias digitales innovadoras y atractivas. Mi teclado es mi pincel y mi código es mi lienzo, a través del cual transformo conceptos abstractos en interfaces dinámicas y funcionales que hacen palpable la visión de cada cliente.
+            <h2>Diseño Web:</h2>
+            <h3>¡Hola y bienvenido/a al mundo del desarrollo web, donde las ideas se convierten en experiencias digitales sorprendentes!
+
+                Soy Leandro Elian Ballato, un apasionado desarrollador web con un amor inquebrantable por la creación de experiencias digitales innovadoras y atractivas. Mi teclado es mi pincel y mi código es mi lienzo, a través del cual transformo conceptos abstractos en interfaces dinámicas y funcionales que hacen palpable la visión de cada cliente.
 
 Con una amplia experiencia en el desarrollo de sitios web atractivos y fáciles de usar, he perfeccionado el arte de combinar diseño estético con funcionalidad sólida. Mi enfoque no se limita a la escritura impecable de código, sino que se extiende a comprender las necesidades únicas de cada proyecto y a traducirlas en soluciones personalizadas que superan las expectativas.
 
@@ -101,14 +143,15 @@ Permíteme ser el arquitecto digital de tu próxima gran idea. ¡Juntos, podemos
 Saludos</h3>
 </div>
 <div class="servicio">
-    <h2>Marketing Digital:
-    Bienvenidos al apasionante mundo del marketing digital, donde las estrategias se convierten en historias de éxito y las ideas se transforman en resultados tangibles!</p>
+    <h2>Marketing Digital:</h2>
+<h3> Bienvenidos al apasionante mundo del marketing digital, donde las estrategias se convierten en historias de éxito y las ideas se transforman en resultados tangibles!
 
             Soy Leandro Elian Ballato, un estratega de marketing digital apasionado y orientado a resultados, con un profundo amor por la creación de campañas que no solo generan impacto, sino que también dejan una huella perdurable en la mente de los consumidores. Mi mente es mi herramienta de creación y mi análisis es mi brújula, a través de la cual navego por el vasto océano digital para posicionar marcas y productos en la cima del reconocimiento y la relevancia.
 
 Con una amplia experiencia en la planificación y ejecución de campañas digitales integrales, he perfeccionado el arte de fusionar la creatividad con la estrategia para producir resultados medibles y significativos. Mi enfoque no se limita simplemente a la generación de leads y el aumento de conversiones, sino que se extiende a la construcción de relaciones sólidas y duraderas con los consumidores, basadas en la confianza y la autenticidad.
+</h3>
 
-</h2>
+
 </div>
 
 
