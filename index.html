@@ -3,24 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Freelancer2.0</title>
 </head>
 <body>
   <header class="logo">
-    <h1>Freelancer Web 2.0</h1>
-    <img src="./img/logo.jpg" alt="Logo de Freelancer 2.0">
-    <!-- Aquí se agrega el elemento con el id "rotating-number" -->
-    <div id="rotating-number">FREELANCER 2.0</div>
-    <nav>
-      <ul>
-        <li><a class="linkinicio" href="index.html">Inicio</a></li>
-        <li><a class="linkservicios" href="./pages/servicios.html">Servicios</a></li>
-        <li><a class="linkcontacto" href="./pages/contacto.html">Contacto</a></li>
-        <li><a class="linktrayectoria" href="./pages/trayectoria.html">Trayectoria</a></li>
-        <li><a class="linkproductos" href="./pages/productos.html">Productos</a></li>
-        <li><a class="linkproductos" href="./pages/tienda.html">Tienda Level11</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h1>Freelancer Web 2.0</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link linkinicio" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link linkservicios" href="./pages/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link linkcontacto" href="./pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link linktrayectoria" href="./pages/trayectoria.html">Trayectoria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link linkproductos" href="./pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link linkproductos" href="./pages/tienda.html">Tienda Level11</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -58,5 +74,3 @@
       <a href="#"><img src="./img/wassinfondo.jfif" alt="Logo de WhatsApp"></a>
     </div>
   </footer>
-</body>
-</html>
